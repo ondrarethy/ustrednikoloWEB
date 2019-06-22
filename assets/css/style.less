@@ -1,0 +1,118 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    body {
+        margin: 0;
+        padding: 0;
+        width: 800px;
+        button.button {
+            position: absolute;
+            background: gray;
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            width: 100px;
+            &.rnd {
+                top: 550px;
+            }
+            &.fix {
+                top: 600px;
+            }
+            &.hide {
+                top: 650px;
+            }
+            &.nav {
+                position: relative;
+            }
+        }
+        table {
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            display: inline-block;
+            &.hidden {
+                opacity: 0;
+            }
+            tbody {
+                margin: 0;
+                padding: 0;
+                tr.row {
+                    margin: 0;
+                    padding: 0;
+                    span.cell {
+                        display: inline-block;
+                        margin: 0;
+                        padding: 0;
+                        width: 64px;
+                        height: 64px;
+                        border: 1px solid black;
+                    }
+                    span.red {
+                        background-color: red;
+                    }
+                    span.orange {
+                        background-color: orange;
+                    }
+                    span.blue {
+                        background-color: blue;
+                    }
+                    span.yellow {
+                        background-color: yellow;
+                    }
+                    span.white {
+                        background-color: white;
+                    }
+                    span.green {
+                        background-color: green;
+                    }
+                    span.empty {
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                    }
+                    span.center {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 64px;
+                            height: 64px;
+                            text-align: center;
+                            font-size: 64px;
+                        }
+                    }
+                    span.center.f {
+                        &::after {
+                            content: 'F';
+                        }
+                    }
+                    span.center.u {
+                        &::after {
+                            content: 'U';
+                        }
+                    }
+                    span.center.d {
+                        &::after {
+                            content: 'D';
+                        }
+                    }
+                    span.center.r {
+                        &::after {
+                            content: 'R';
+                        }
+                    }
+                    span.center.l {
+                        &::after {
+                            content: 'L';
+                        }
+                    }
+                    span.center.b {
+                        &::after {
+                            content: 'B';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
